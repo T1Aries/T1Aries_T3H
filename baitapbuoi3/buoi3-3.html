@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            .clearfix::after{
+                display: block;
+                content: "";
+                clear: both;
+            }
+
+            .container{
+                background-color: antiquewhite;
+                width: 100%;
+            }
+
+            .container .col-1{
+                width: 300px;
+                background-color: aqua;
+                float: left;
+            }
+            .container .col-2{
+                width: 500px;
+                background-color: blueviolet;
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container clearfix">
+            <div class="col-1">
+                <h2>cột trái</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique cum officia dolorem voluptatem voluptas. Corrupti, vitae dolores, quam dolor, tenetur iusto inventore praesentium nisi harum totam quasi natus itaque reprehenderit?</p>
+            </div>
+            <div class="col-2">
+                <h2>cột phải </h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, blanditiis. Maiores aut placeat vitae optio itaque sit suscipit, ipsam illum dolore, corrupti delectus porro! Neque eos accusamus nihil excepturi ullam?</p>
+            </div>
+        </div>
+    </body>
+</html>
