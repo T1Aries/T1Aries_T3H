@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        .divA .divB .divC{
+            width: 100px;
+            height: 100px;
+        }
+
+        .divA{
+            background-color: green;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+
+        .divB{
+            background-color: red;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            z-index: 3;
+        }
+
+        .divC{
+            background-color: yellow;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+            z-index: 2;
+        }
+    </style>
+    <body>
+        
+        <pre>
+            z-index : tao layer 3 lop tren giao dien wed 
+            z-index la thuoc tinh chieu sau
+            chi co tac dung khi position khác static
+            position: static;
+            position: relative;
+            position: absolute;
+            position: fixed;
+            position: sticky;
+
+            * z index cang cao thi se cang o ben tren 
+        </pre>
+
+        <div class="divA">
+            thẻ a 
+        </div>
+
+        <div class="divB">
+            thẻ b 
+        </div>
+
+        <div class="divC">
+            thẻ c 
+        </div>
+    </body>
+</html>
