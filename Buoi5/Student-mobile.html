@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/Poppins/Poppins-Bold.ttf">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media screen and (min-width: 375px) and (max-width: 812px) {
+            body{
+                background-color: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+            }
+            .site-wrap{
+                background-color: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+            }
+        }
+
+        .header{
+            background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+            width: 414px;
+            height: 896px;
+        }
+
+        .logo{
+            margin-top: 60px;
+            color: #ffffff;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 42px;
+            margin-left: 32px;
+            width: 42px;
+        }
+        
+        .c{
+            display: inline-block;
+            
+        }
+        .mobile-menu{
+            text-align: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 36px;
+            flex: none;
+            margin-left: 248px;
+            margin-right: 32px;
+            
+        }
+        ul > li{
+            list-style-type: none;  
+        }
+
+        a{
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .button{
+            background-color: #DA722C;
+            width: 145px;
+            height: 48px;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 12px 37px;
+            gap: 10px;
+            border-radius: 24px;
+
+            text-align: center;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        nav ul.menu1{
+            position: relative;
+        }
+
+        ul.menu2{
+                position: absolute;
+                width: 414px;
+                height: 165px;
+                top: 30px;
+                right: 0;
+                margin-right: -48px;
+                background-color: #070917;
+                display: none;
+            }
+
+        ul.menu2 > li{
+            position: relative;
+        }
+
+
+        ul.menu1 > li:hover ul.menu2{
+            display: block;
+        }
+
+        .intro-title{
+            color: #ffffff;
+            font-family: 'Raleway';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 125%;
+            margin-left: 32px;
+            margin-right: 32px;
+            margin-top: 58px;
+        }
+
+        .intro-desc{
+            color: #ffffff;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 200%;
+            margin-left: 32px;
+            margin-right: 32px;
+            margin-top: 16px;
+        }
+
+        .erroll-btn{
+            background-color: #DA722C;
+            width: 171px;
+            height: 48px;
+            display: flex;
+            margin: auto;
+            flex-direction: row;
+            align-items: flex-start;
+            padding: 12px 30px;
+            gap: 10px;
+            border-radius: 24px;
+
+            margin-left: 33px;
+            margin-right: 210px;
+            margin-top: 34px;
+        }
+        .erroll-btn img{
+            width: 16px;
+            height: 16px;
+            flex: none;
+            order: 0;
+            flex-grow: 0;
+        }
+        .erroll-btn p{
+            color: #ffffff;
+            font-family: 'Poppins';
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 24px;
+        }
+
+        .person{
+            display: inline;
+        }
+
+
+        a{
+            line-height: 25px;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 2;
+        }
+
+        .box1{
+            position: relative;
+            z-index: 1;
+            display: flex;
+            border: none;
+            background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+            margin-left: 29px;
+            margin-top: 146px;
+            width: 192px;
+            height: 84px;
+            flex-direction: row;
+            align-items: flex;
+            padding: 12px 32px;
+            gap: 10px;
+            border-radius: 24px;
+        }
+
+        .box2{
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            border: none;
+            background-color: #ffffff;
+            width: 184px;
+            height: 75px;
+            margin-left: -32px;
+            margin-top: -12px;
+            flex-direction: row;
+            align-items: flex;
+            padding: 12px 32px;
+            gap: 10px;
+            border-radius: 24px;
+        }
+
+        .box3{
+            position: relative;
+            z-index: 1;
+            display: flex;
+            border: none;
+            background: linear-gradient(180deg, #6F7DFB 0%, #3B448F 100%);
+            margin-left: 32px;
+            margin-top: 48px;
+            width: 172px;
+            height: 80px;
+            flex-direction: row;
+            align-items: flex;
+            padding: 12px 32px;
+            gap: 10px;
+            border-radius: 24px;
+        }
+
+        .box4{
+            position: absolute;
+            z-index: 2;
+            display: flex;
+            border: none;
+            background-color: #ffffff;
+            width: 161px;
+            height: 75px;
+            margin-left: -32px;
+            margin-top: -12px;
+            flex-direction: row;
+            align-items: flex;
+            padding: 12px 32px;
+            gap: 10px;
+            border-radius: 24px;
+        }
+
+        .person1 img{
+            margin: -341px 0 0 182px;
+            display: block;
+        }
+        p{
+            text-align: center;
+            color: #023047;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 125%;
+        }
+
+        .ab{
+            text-align: center;
+            color: #023047;
+            font-family: 'Poppins';
+            font-size: 14px;
+        }
+        span.d {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="site-wrap">
+
+        <div class="header">
+            <div class="top-header">
+                <div class="logo c">
+                   <a href="Student-mobile.html"> GD.</a>
+                </div>
+
+                <div class="mobile-menu c">
+                    <nav>
+                        <ul class="menu1">
+                            <li>
+                                <a href="#"><img src="image/menu.png" alt=""></a>
+                                    <ul class="menu2">
+                                        <li>
+                                            <a href="#">About</a>
+                                        </li>
+                            
+                                        <li>
+                                            <a href="#">Services</a>
+                                        </li>
+                            
+                                        <li>
+                                            <a href="#">Our Work</a>
+                                        </li>
+                            
+                                        <li class="button">
+                                            <a href="#">Erol Now</a>
+                                        </li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <div class="intro">
+                <div class="intro-title">
+                    Learn the art 
+                    of Game Dev
+                </div>
+
+                <div class="intro-desc">
+                    This is a comprehensive course on Game Development. You will learn everything from generating an idea to publishing your games to different platforms.
+                </div>
+                    
+                <div class="erroll-btn">
+                    
+                    <p><a href="#"><img src="image/PencilAlt.png" alt=""> Enrol Now</a></p>
+            </div>
+            
+        </div>
+
+        <div class="person">
+            <div class="title">
+                <div class="box1">
+                    <div class="box2">
+                        <div class="ab">
+                            <span class="d"><p>32K</p></span> 
+                            <span class="d">Students Enrolled</span> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box3">
+                    <div class="box4">
+                        <div class="ab">
+                            <span class="d"> 
+                                <p>4.7 <img src="image/star.png" alt="" width="35px" height="35px"> </p>
+                            </span> 
+                            <span class="d"> Overall Rating </span> 
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+            <div class="person1">
+                <img src="image/person2.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

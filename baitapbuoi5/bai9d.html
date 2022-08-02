@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .container .col {
+            width: 30%;
+            padding: 10px;
+            background-color: olivedrab;
+        }
+
+        @media screen and (min-width: 320px) and (max-width:767px){
+            /* áp dụng mobile */
+            .container {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .container .col {
+                margin: 10px 1%;
+                width: 98%;
+            }
+        }
+
+        @media screen and (min-width: 768px) and (max-width:1199.9px){
+            /* áp dụng tab */
+            .container {
+                width: 100%;
+                flex-direction: row;
+                justify-content: flex-start;
+            }
+
+            .container .col {
+                margin: 10px 1%;
+                width: 48%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="col">
+            <h2>cột 1</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eum qui? Asperiores, ad harum praesentium deleniti nobis voluptate voluptatum hic commodi quia? Minus nulla nisi, velit voluptates quam in ipsa.</p>
+        </div>
+
+        <div class="col">
+            <h2>cột 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eum qui? Asperiores, ad harum praesentium deleniti nobis voluptate voluptatum hic commodi quia? Minus nulla nisi, velit voluptates quam in ipsa.</p>
+        </div>
+
+        <div class="col">
+            <h2>cột 3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, eum qui? Asperiores, ad harum praesentium deleniti nobis voluptate voluptatum hic commodi quia? Minus nulla nisi, velit voluptates quam in ipsa.</p>
+        </div>
+    </div>
+    
+</body>
+</html>
