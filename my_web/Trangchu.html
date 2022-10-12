@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        @media only screen and (max-device-width: 812px) { 
+            .site-wrap{
+                background-color: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+            }
+        }
+        body{
+            background-color: aliceblue;
+        }
+
+        .site-wrap {
+            width: 100%;
+        }
+
+        .site-wrap * {
+            box-sizing: border-box;
+        }
+
+        .site-wrap .header {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(180deg, #6F7DFB 0%, #26308C 100%);
+            border: 1px solid #000000;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .top-header {
+            margin: 60px 32px 58px 32px;
+            height: 42px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .top-header .logo {
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            font-weight: 900;
+            font-size: 36px;
+            line-height: 125%;
+            color: #FFFFFF;
+        }
+
+        
+        img{
+            height: 50px;
+            width: 50px;
+        }
+
+        .logo img{
+            height: 100px;
+            width: 100px;
+        }
+
+        button{
+            width: 160px;
+            height: 50px;
+            font-size: 24px;
+            display: inline-block;
+        }
+        .Subscribe{
+            background-color: #E0FEFE;
+            border-color: #FF9AA2;
+            border-radius: 12px;
+
+        }
+        a{
+            text-decoration: none;
+            color: #FF9AA2;
+        }
+        b{
+            color: #FF9AA2;
+            font-size: 24px;
+        }
+
+        .mobile-menu{
+            text-align: center;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 36px;
+            flex: none;
+            margin-left: auto;
+            margin-right: 50px;
+        }
+        ul > li{
+            list-style-type: none;  
+        }
+
+        nav ul.menu1{
+            position: relative;
+        }
+
+        ul.menu2{
+                position: absolute;
+                width: 414px;
+                height: auto;
+                top: 30px;
+                right: 0;
+                margin-right: -48px;
+                background-color: #070917;
+                display: none;
+            }
+
+        ul.menu2 > li{
+            position: relative;
+        }
+
+
+        ul.menu1 > li:hover ul.menu2{
+            display: block;
+        }
+
+        .main-content{
+            margin-top: 20px;
+        }
+        .lienhe{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="site-wrap">
+        <div class="header">
+            <div class="top-header">
+                <div class="logo">
+                    <a href="Trangchu.html"><img src="Image/logo.jpg" alt=""></a>
+                </div>
+
+                <div class="mobile-menu c">
+                    <nav>
+                        <ul class="menu1">
+                            <li>
+                                <a href="#"><img src="Image/mobile-menu.png" alt=""></a>
+                                    <ul class="menu2">
+                                        <li>
+                                            <a href="#">Sửa thông tin cá nhân</a>
+                                        </li>
+                            
+                                        <li>
+                                            <a href="tel:0336523680">Liên Hệ sđt: 0336523680</a>
+                                        </li>
+                            
+                                        <li>
+                                            <a href="mailto:duongngo2103@gmail.com">Email: Duongngo210320@gmail.com</a>
+                                        </li>
+                            
+                                        <li class="button">
+                                            <a href="https://www.facebook.com/tungduong2103">Facebook: Tùng Dương</a>
+                                        </li>
+
+                                        <li class="button">
+                                            <a href="https://www.tiktok.com/@fan_nacucmo">Tiktok: ❥𝐅𝐚𝐧 𝐍𝐚 𝐜𝐮̣𝐜 𝐦𝐨̛̃♛🌻</a>
+                                        </li>
+                                    </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                
+
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <div class="intro">
+                <div class="nut">
+                    <a href="#">
+                        <button class="Subscribe">
+                            Sửa thông tin
+                        </button>
+                    </a>
+                </div>
+                <div class="intro-title">
+                    <b>Thông tin cá nhân</b>
+                </div>
+            </div>
+            <div class="lienhe">
+                <div class="phone">
+                    <a href="tel:0336523680">
+                        <img src="Image/phone.png" alt="" height="50px" width="50px">
+                        <b>0336523680</b>
+                    </a>
+                </div>
+                <div class="mail">
+                    <a href="mailto:duongngo2103@gmail.com">
+                        <img src="Image/mail.jpg" alt="">
+                        <b>Duongngo210320@gmail.com</b>
+                    </a>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/tungduong2103">
+                        <img src="Image/facebook.png" alt="">
+                        <b>Tùng Dương</b>
+                    </a>
+                </div>
+                <div class="tiktok">
+                    <a href="https://www.tiktok.com/@fan_nacucmo">
+                        <img src="Image/tiktok.png" alt="">
+                        <b>❥𝐅𝐚𝐧 𝐍𝐚 𝐜𝐮̣𝐜 𝐦𝐨̛̃♛🌻</b>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
